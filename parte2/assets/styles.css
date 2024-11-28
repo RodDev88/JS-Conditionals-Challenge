@@ -1,0 +1,102 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Contendor stickers */
+.stickers {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    gap: 20px; /* Espaciado uniforme entre tarjetas */
+}
+
+/*Cada sticker */
+
+.sticker {
+    display: flex;
+    flex-direction: column; /* Alineación vertical: imagen arriba, input abajo */
+    align-items: center; /* Centra el contenido horizontalmente */
+    flex: 1; /* Distribuye equitativamente el espacio */
+    background: #f9f9f9; /* Fondo claro para la tarjeta */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+ /* Efecto de elevación al pasar el mouse */
+
+.sticker:hover {
+    transform: translateY(-5px);
+}
+
+/* Tamaño uniforme de las imágenes */
+.sticker img {
+    width: 120px; 
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Tamaño uniforme de los inputs */
+
+.sticker input {
+    width: 60px; 
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* Botón y mensaje */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.message {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.message-success {
+    color: green;
+}
+
+.message-error {
+    color: red;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stickers Counter</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Puedes llevar hasta 10 stickers en total</h1>
+
+      <div class="stickers">
+        <!-- Sticker 1 -->
+        <div class="sticker">
+          <img
+            src="https://octodex.github.com/images/octocat-de-los-muertos.jpg"
+            alt="Sticker 1"
+          />
+          <input type="number" id="sticker1" placeholder="0" min="0" />
+        </div>
+
+        <!-- Sticker 2 -->
+        <div class="sticker">
+          <img
+            src="https://api.slack.com/img/blocks/bkb_template_images/beagle.png"
+            alt="Sticker 2"
+          />
+          <input type="number" id="sticker2" placeholder="0" min="0" />
+        </div>
+
+        <!-- Sticker 3 -->
+        <div class="sticker">
+          <img
+            src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png"
+            alt="Sticker 3"
+          />
+          <input type="number" id="sticker3" placeholder="0" min="0" />
+        </div>
+      </div>
+
+      <p id="message"></p>
+      <button id="verify">Verificar</button>
+    </div>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>
